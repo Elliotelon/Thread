@@ -59,7 +59,8 @@ struct LoginView: View {
                 Divider()
                 
                 NavigationLink {
-                    Text("회원가입")
+                    RegistrationView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack(spacing: 3) {
                         Text("계정이 없으신가요?")
